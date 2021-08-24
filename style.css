@@ -1,11 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap');
 .page {
     max-width: 1440px;
-    margin: auto;
-    font-family: 'Inter';
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
+    background-color: #2A2C2F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 984px;
+}
+
+.header__logo {
+    width: 271px;
+    margin-top: 34px;
+}
+
+.lead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 92px auto;
+}
+
+.header__title {
+    max-width: 793px;
+    font-weight: 900px;
+    font-size: 96px;
+    text-align: center;
+    line-height: 1.04;
+    margin: 0px;
+}
+
+.header__subtitle {
+    max-width: 720px;
+    margin: 32px auto 64px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400px;
+}
+
+.header__cover {
+    width: 100%;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+    max-width: 785px;
+    margin-bottom: 118px;
+}
+
+.intro__title {
+    width: 100%;
+    margin: 0px auto 40px;
+    font-size: 54px;
+    line-height: 1.07;
+    font-weight: 900px;
+}
+
+.intro__quote {
+    max-width: 690px;
+    margin: 0px 0px 10px;
+    font-size: 24px;
+    line-height: 1.42;
+    font-weight: 400px;
+}
+
+.intro__quote_name {
+    margin-bottom: 32px;
+    text-align: end;
+}
+
+.intro__explanation {
+    max-width: 690px;
+    font-size: 16px;
+    line-height: 1.63;
+    font-weight: 400px;
+    margin: 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.photo-grid {
+    max-width: calc(100% - 96px);
+    margin-bottom: 92px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.photo-grid__image {
+    width: 100%;
+}
+
+.places {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 987px;
+}
+
+.place {
+    width: 100%;
+    display: grid;
+    gap: 48px 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 152px 1fr 48px;
+    grid-template-areas: "place__title place__website" "place__image place__description" "place__buy-link place__description";
+    margin-bottom: 80px;
+}
+
+.place__title {
+    font-size: 72px;
+    font-weight: 900px;
+    line-height: 1.06;
+    text-align: left;
+    grid-area: place__title;
+    letter-spacing: 0em;
+    margin: 0px;
+    align-self: end;
+}
+
+.place__website {
+    grid-area: place__website;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.place__website-url-heading {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.12em;
+    text-align: left;
+    color: #AAAAAA;
+    margin: 0px 0px 8px;
+}
+
+.place__website-link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.22;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.place__image {
+    grid-area: place__image;
+}
+
+.place__description {
+    grid-area: place__description;
+}
+
+.place__description-paragraph {
+    margin: 0px 0px 25px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.63;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.buy-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 4px;
+    padding: 13px 20px;
+    background-color: #0278FE;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #FFFFFF;
+    opacity: 1;
+    transition: background-color 0.5s linear 0.2s;
+    cursor: grab;
+}
+
+.buy-link:hover {
+    background-color: #0063D2;
+}
+
+.buy-link_place {
+    width: 248px;
+    grid-area: place__buy-link;
+}
+
+
+/* padding-bottom: 100%; for image because its square */
+
+
+/*
+.cover {
+    background-image: url("./images/14.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% - 96px);
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s linear 0.2s;
+    opacity: 1;
+    cursor: grab;
+    margin-top: 92px;
+    margin-bottom: 92px;
+}
+*/
+
+.cover {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 1184px;
+    cursor: grab;
+    margin-top: 92px;
+    margin-bottom: 92px;
+    height: 740px;
+}
+
+.cover__image {
+    height: 740px;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 0;
+    opacity: 1;
+    transition: opacity 0.5s linear 0.2s;
+}
+
+.cover__content {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.cover:hover .cover__image {
+    opacity: 0.8;
+}
+
+.cover__title {
+    color: #FFFDFD;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1.06;
+    letter-spacing: 0em;
+    margin: 0px;
+}
+
+.cover__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.22;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 32px 0px;
+}
+
+.footer {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0em;
+    margin: 0px 0px 24px;
+}
+
+
+/* the cursor export from figma
+   to do all the cover a link
+   when hover change to opacity only of cover
+   see youtube or webinar 
+
+responsiveness bem
+
+move place description to div and get care the margins
+
+alt for images   desripitopn of image
+
+image of home
+
+*/
