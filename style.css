@@ -127,9 +127,12 @@
     display: grid;
     gap: 48px 40px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 152px 1fr 48px;
-    grid-template-areas: "place__title place__website" "place__image place__description" "place__buy-link place__description";
+    grid-template-areas: "place__title place__website" "place__image-buy-link place__description" "place__buy-link place__description";
     margin-bottom: 80px;
+}
+
+.place:last-of-type {
+    margin-bottom: 0px;
 }
 
 .place__title {
@@ -171,8 +174,10 @@
     color: #FFFFFF;
 }
 
+.place__image-buy-link {}
+
 .place__image {
-    grid-area: place__image;
+    grid-area: place__image-buy-link;
 }
 
 .place__description {
@@ -204,7 +209,7 @@
     color: #FFFFFF;
     opacity: 1;
     transition: background-color 0.5s linear 0.2s;
-    cursor: grab;
+    cursor: url("./images/hand.png"), auto;
 }
 
 .buy-link:hover {
@@ -213,7 +218,9 @@
 
 .buy-link_place {
     width: 248px;
-    grid-area: place__buy-link;
+    height: 48px;
+    margin-top: 48px;
+    grid-area: place__image-buy-link;
 }
 
 
@@ -246,8 +253,7 @@
     align-items: center;
     justify-items: center;
     width: 1184px;
-    cursor: grab;
-    margin-top: 92px;
+    margin-top: 76px;
     margin-bottom: 92px;
     height: 740px;
 }
@@ -259,6 +265,7 @@
     z-index: 0;
     opacity: 1;
     transition: opacity 0.5s linear 0.2s;
+    cursor: url("./images/hand.png"), auto;
 }
 
 .cover__content {
@@ -269,6 +276,7 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
+    cursor: url("./images/hand.png"), auto;
 }
 
 .cover:hover .cover__image {
@@ -302,14 +310,10 @@
 }
 
 
-/* the cursor export from figma
-   to do all the cover a link
-   when hover change to opacity only of cover
-   see youtube or webinar 
+/* 
 
 responsiveness bem
 
-move place description to div and get care the margins
 
 alt for images   desripitopn of image
 
