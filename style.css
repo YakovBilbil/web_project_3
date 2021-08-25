@@ -84,7 +84,7 @@
 
 .intro__quote_name {
     margin-bottom: 32px;
-    text-align: end;
+    align-self: flex-end;
 }
 
 .intro__explanation {
@@ -119,7 +119,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 987px;
+    max-width: 984px;
 }
 
 .place {
@@ -178,6 +178,7 @@
 
 .place__image {
     grid-area: place__image-buy-link;
+    width: 100%;
 }
 
 .place__description {
@@ -223,43 +224,18 @@
     grid-area: place__image-buy-link;
 }
 
-
-/* padding-bottom: 100%; for image because its square */
-
-
-/*
-.cover {
-    background-image: url("./images/14.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: calc(100% - 96px);
-    height: 740px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.5s linear 0.2s;
-    opacity: 1;
-    cursor: grab;
-    margin-top: 92px;
-    margin-bottom: 92px;
-}
-*/
-
 .cover {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
     align-items: center;
     justify-items: center;
-    width: 1184px;
+    max-width: 1184px;
     margin-top: 76px;
     margin-bottom: 92px;
-    height: 740px;
 }
 
 .cover__image {
-    height: 740px;
     grid-column: 1;
     grid-row: 1;
     z-index: 0;
@@ -307,6 +283,81 @@
     line-height: 1.14;
     letter-spacing: 0em;
     margin: 0px 0px 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .lead {
+        margin: 88px auto;
+    }
+    .header__title {
+        max-width: 720px;
+    }
+    .header__subtitle {
+        max-width: 720px;
+        margin-bottom: 36px;
+    }
+    .intro {
+        align-self: center;
+        margin-bottom: 88px;
+        max-width: 720px;
+    }
+    .photo-grid {
+        max-width: calc(100% - 48px);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .places {
+        max-width: 720px;
+    }
+    .place {
+        margin-bottom: 72px;
+    }
+    .place__title {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+    .space {
+        display: none;
+    }
+    .place__website-link {
+        font-size: 16px;
+    }
+    .place__description-paragraph {
+        font-size: 16px;
+    }
+    .cover {
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__cover {
+        width: 320px;
+    }
+    .header__title {
+        max-width: 288px;
+        font-size: 40px;
+        line-height: 1.1;
+    }
+    .header__subtitle {
+        max-width: 288px;
+        margin: 16px auto 40px;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+    .photo-grid {
+        max-width: calc(100% - 32px);
+        grid-template-columns: 1fr;
+    }
+    .place {
+        gap: 48px 40px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "place__title" "place__website" "place__image-buy-link" "place__description" "place__buy-link";
+    }
+    .buy-link_place {
+        width: calc(100%-32px);
+        margin-top: 30px;
+        grid-row: place__buy-link;
+    }
 }
 
 
