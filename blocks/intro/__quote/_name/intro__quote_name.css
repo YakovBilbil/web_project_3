@@ -1,11 +1,13 @@
 .intro__quote_name {
     margin-bottom: 32px;
+    -ms-flex-item-align: end;
     align-self: flex-end;
 }
 
 @media screen and (max-width: 320px) {
     .intro__quote_name {
         margin-bottom: 32px;
+        -ms-flex-item-align: end;
         align-self: flex-end;
     }
 }

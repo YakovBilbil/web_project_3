@@ -1,7 +1,15 @@
 .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -ms-flex-item-align: start;
     align-self: flex-start;
     max-width: 785px;
     margin-bottom: 118px;
@@ -9,6 +17,7 @@
 
 @media screen and (max-width: 768px) {
     .intro {
+        -ms-flex-item-align: center;
         align-self: center;
         margin-bottom: 88px;
         max-width: 720px;
@@ -17,6 +26,7 @@
 
 @media screen and (max-width: 320px) {
     .intro {
+        -ms-flex-item-align: center;
         align-self: center;
         margin-bottom: 90px;
         max-width: 288px;

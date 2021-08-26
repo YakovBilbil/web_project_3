@@ -3,9 +3,10 @@
     display: grid;
     gap: 48px 40px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 460px 48px;
+    grid-template-rows: 92px 460px 1fr;
     grid-template-areas: "place__title place__website" "place__image place__description" "place__buy-link place__description";
     margin-bottom: 80px;
+    margin-top: 80px;
 }
 
 .place:last-of-type {
@@ -25,5 +26,6 @@
         grid-template-rows: 70px 46px 320px 1fr 48px;
         grid-template-areas: "place__title" "place__website" "place__image" "place__description" "place__buy-link";
         margin-bottom: 48px;
+        margin-top: 0px;
     }
 }

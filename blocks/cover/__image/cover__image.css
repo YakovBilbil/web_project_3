@@ -3,6 +3,8 @@
     grid-row: 1;
     z-index: 0;
     opacity: 1;
+    -webkit-transition: opacity 0.5s linear 0.2s;
+    -o-transition: opacity 0.5s linear 0.2s;
     transition: opacity 0.5s linear 0.2s;
     cursor: url("./images/hand.png"), auto;
 }
