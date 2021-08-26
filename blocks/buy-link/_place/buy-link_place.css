@@ -8,6 +8,8 @@
     .buy-link_place {
         justify-self: center;
         width: 288px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 }
