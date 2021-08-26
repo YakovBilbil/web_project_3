@@ -1,0 +1,10 @@
+.place__description {
+    grid-area: place__description;
+}
+
+@media screen and (max-width: 320px) {
+    .place__description {
+        width: 288px;
+        justify-self: center;
+    }
+}

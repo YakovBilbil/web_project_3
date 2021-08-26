@@ -1,0 +1,9 @@
+.header__cover {
+    width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+    .header__cover {
+        width: 320px;
+    }
+}

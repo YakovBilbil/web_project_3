@@ -1,0 +1,23 @@
+.cover {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
+    max-width: 1184px;
+    margin-top: 76px;
+    margin-bottom: 92px;
+}
+
+@media screen and (max-width: 768px) {
+    .cover {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cover {
+        width: 100%;
+        margin-top: 64px;
+    }
+}
