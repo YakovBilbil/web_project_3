@@ -6,7 +6,7 @@
     -ms-flex-align: center;
     align-items: center;
     justify-items: center;
-    max-width: 1184px;
+    width: 100%;
     margin-top: 92px;
     margin-bottom: 92px;
 }
