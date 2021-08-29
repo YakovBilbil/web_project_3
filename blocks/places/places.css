@@ -10,8 +10,6 @@
     -ms-flex-align: center;
     align-items: center;
     max-width: 987px;
-    list-style-type: none;
-    padding: 0px;
 }
 
 @media screen and (max-width: 768px) {

@@ -13,5 +13,5 @@
     -ms-flex-align: center;
     align-items: center;
     justify-items: center;
-    cursor: url("./images/hand.png"), auto;
+    cursor: pointer;
 }

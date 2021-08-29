@@ -10,8 +10,8 @@
     -ms-flex-align: start;
     align-items: flex-start;
     -ms-flex-item-align: start;
-    align-self: flex-start;
-    max-width: 785px;
+    align-self: center;
+    max-width: 984px;
     margin-bottom: 118px;
 }
 

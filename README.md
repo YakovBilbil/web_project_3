@@ -26,7 +26,7 @@ This is a webpage that showcases the hometowns of some of Practicum's employees.
 
 **The link to GitHub Pages**
 
-https://github.com/YakovBilbil/web_project_3.git
+https://yakovbilbil.github.io/web_project_3/
 
 
 

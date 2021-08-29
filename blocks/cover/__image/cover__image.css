@@ -6,8 +6,11 @@
     -webkit-transition: opacity 0.5s linear 0.2s;
     -o-transition: opacity 0.5s linear 0.2s;
     transition: opacity 0.5s linear 0.2s;
-    cursor: url("./images/hand.png"), auto;
+    cursor: pointer;
     width: 100%;
+    background-image: url("../../../images/14.png");
+    background-size: cover;
+    height: 740px;
 }
 
 .cover:hover .cover__image {

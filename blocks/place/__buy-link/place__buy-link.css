@@ -1,0 +1,15 @@
+.place__buy-link {
+    width: 248px;
+    height: 48px;
+    grid-area: place__buy-link;
+}
+
+@media screen and (max-width: 320px) {
+    .place__buy-link {
+        justify-self: center;
+        width: 288px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
