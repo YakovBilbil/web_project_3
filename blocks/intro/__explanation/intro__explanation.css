@@ -5,3 +5,9 @@
     font-weight: 400;
     margin: 0px;
 }
+
+@media screen and (max-width: 768px) {
+    .intro__explanation {
+        max-width: 720px;
+    }
+}
