@@ -7,7 +7,7 @@
     align-items: center;
     justify-items: center;
     width: calc(100% - 96px);
-    height: 740px;
+    min-height: 740px;
     margin-bottom: 92px;
 }
 
@@ -20,6 +20,6 @@
 @media screen and (max-width: 320px) {
     .cover {
         margin: 64px 0px;
-        height: 254px;
+        min-height: 254px;
     }
 }

@@ -2,7 +2,7 @@
     grid-column: 1;
     grid-row: 1;
     z-index: 0;
-    opacity: 0.3;
+    opacity: 0.8;
     -webkit-transition: opacity 0.5s linear 0.2s;
     -o-transition: opacity 0.5s linear 0.2s;
     transition: opacity 0.5s linear 0.2s;
@@ -10,15 +10,15 @@
     width: 100%;
     background-image: url("../../../images/14.png");
     background-size: cover;
-    height: 740px;
+    min-height: 740px;
 }
 
 .cover:hover .cover__image {
-    opacity: 0.8;
+    opacity: 0.3;
 }
 
 @media screen and (max-width: 320px) {
     .cover__image {
-        height: 254px;
+        min-height: 254px;
     }
 }
