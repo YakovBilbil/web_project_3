@@ -4,7 +4,7 @@
     font-weight: 900;
     line-height: 1.06;
     letter-spacing: 0em;
-    margin: 0px;
+    margin: 0px 0px 32px;
 }
 
 @media screen and (max-width: 320px) {
@@ -12,5 +12,6 @@
         font-size: 32px;
         line-height: 1.09;
         color: #FFFFFF;
+        margin-bottom: 16px;
     }
 }

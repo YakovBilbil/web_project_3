@@ -1,11 +1,18 @@
 .intro__quoter {
     max-width: 690px;
     margin: 0px 0px 32px;
+    padding-right: 95px;
     font-size: 24px;
     line-height: 1.42;
-    font-weight: 400px;
+    font-weight: 400;
     -ms-flex-item-align: end;
     align-self: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    .intro__quoter {
+        padding-right: 0px;
+    }
 }
 
 @media screen and (max-width: 320px) {

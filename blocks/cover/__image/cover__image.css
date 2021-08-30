@@ -2,7 +2,7 @@
     grid-column: 1;
     grid-row: 1;
     z-index: 0;
-    opacity: 1;
+    opacity: 0.3;
     -webkit-transition: opacity 0.5s linear 0.2s;
     -o-transition: opacity 0.5s linear 0.2s;
     transition: opacity 0.5s linear 0.2s;
@@ -15,4 +15,10 @@
 
 .cover:hover .cover__image {
     opacity: 0.8;
+}
+
+@media screen and (max-width: 320px) {
+    .cover__image {
+        height: 254px;
+    }
 }

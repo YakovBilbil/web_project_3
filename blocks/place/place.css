@@ -3,10 +3,9 @@
     display: grid;
     gap: 48px 40px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 92px 460px 1fr;
+    grid-template-rows: 150px 460px 1fr;
     grid-template-areas: "place__title place__website" "place__image place__description" "place__buy-link place__description";
     margin-bottom: 80px;
-    margin-top: 80px;
 }
 
 .place:last-of-type {
@@ -16,10 +15,12 @@
 @media screen and (max-width: 768px) {
     .place {
         margin-bottom: 72px;
+        grid-template-rows: 90px 460px 1fr;
+        gap: 48px 28px;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
     .place {
         gap: 30px;
         grid-template-columns: 1fr;

@@ -1,4 +1,5 @@
-.places {
+.lead-intro {
+    width: calc(100% - 296px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9,21 +10,10 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    max-width: 987px;
-    margin: 92px 148px 92px 145px;
 }
 
 @media screen and (max-width: 768px) {
-    .places {
-        max-width: 720px;
-        margin: 44px 0px 88px;
-        width: calc(100% - 48px);
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .places {
+    .lead-intro {
         width: 100%;
-        margin: 10px 0px 64px;
     }
 }

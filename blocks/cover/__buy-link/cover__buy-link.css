@@ -1,0 +1,9 @@
+.cover__buy-link {
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 320px) {
+    .cover__buy-link {
+        margin-top: 16px;
+    }
+}
